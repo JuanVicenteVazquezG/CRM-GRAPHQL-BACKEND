@@ -1,0 +1,19 @@
+{
+  "name": "crm-graphql-backend",
+  "version": "1.0.0",
+  "description": "CRM Based in GraqpQL and Apollo Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanVicenteVazquezG/CRM-GRAPHQL-BACKEND.git"
+  },
+  "author": "Juan Vicente Vazquez G.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanVicenteVazquezG/CRM-GRAPHQL-BACKEND/issues"
+  },
+  "homepage": "https://github.com/JuanVicenteVazquezG/CRM-GRAPHQL-BACKEND#readme"
+}
