@@ -1,4 +1,4 @@
-#  Schema
+// Schema
 const { gql } = require('apollo-server');
 
 const typeDefs = gql`
@@ -15,3 +15,5 @@ const typeDefs = gql`
         obtainTechnologies: [Technology]
     }
 `;
+
+module.exports = typeDefs;
