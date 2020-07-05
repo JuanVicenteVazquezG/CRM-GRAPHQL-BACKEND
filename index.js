@@ -22,13 +22,17 @@ const Courses = [
 
 // Schema
 const typeDefs = gql`
-    type Course{
-        title: String,
+    type Course {
+        title: String        
+    }
+
+    type Technology {
         technology: String
     }
 
     type Query {
         obtainCourses: [Course]
+        obtainTechnologies: [Technology]
     }
 `;
 
@@ -38,6 +42,7 @@ const typeDefs = gql`
 const resolvers = {
     Query: {
         obtainCourses: () => Courses,
+        obtainTechnologies: () => Courses,
     }
 }
 
