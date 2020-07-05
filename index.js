@@ -1,21 +1,7 @@
 const { ApolloServer, gql } = require('apollo-server');
 
-
-
-// Schema
-const typeDefs = gql`
-    type Course{
-        title: String,
-        technology: String
-    }
-
-    type Query {
-        obtainCourses: Course
-    }
-`;
-
 // Seed Proof
-const courses = [
+const Courses = [
     {
         title: 'JavaScript Moderno Guía Definitiva Construye +10 Proyectos',
         technology: 'JavaScript ES6',
@@ -34,10 +20,24 @@ const courses = [
     }
 ];
 
+// Schema
+const typeDefs = gql`
+    type Course{
+        title: String,
+        technology: String
+    }
+
+    type Query {
+        obtainCourses: [Course]
+    }
+`;
+
+
+
 // Resolvers
 const resolvers = {
     Query: {
-        obtainCourses: () => courses[0],
+        obtainCourses: () => Courses,
     }
 }
 
